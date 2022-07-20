@@ -1,8 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-
-import SideBar from "./SideBar";
 import MainBody from "./MainBody/MainBody";
+import SideBar from "./sidebar/SideBar";
 
 const LatestNews = () => {
   return (
@@ -10,7 +9,12 @@ const LatestNews = () => {
       <Box width="70%">
         <MainBody />
       </Box>
-      <Box border="1px solid black" width="28%">
+      <Box  display={{
+        sm:"none",
+        md:"block",
+    
+       
+      }} width="28%">
         <SideBar />
       </Box>
     </Box>
