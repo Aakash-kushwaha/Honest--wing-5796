@@ -27,10 +27,21 @@ const StoryContent = () => {
       borderRadius="0.75rem"
       textAlign="left"
     >
+      <Heading
+        as="h5"
+        size="sm"
+        mb="1rem"
+        textTransform="uppercase"
+        color="#03a9f4"
+      >
+        Story Type
+      </Heading>
       <Heading as="h2" size="xl" mb="0.5rem">
         Story Title
       </Heading>
-      <Text fontSize="xl">Story sub-title</Text>
+      <Text fontSize="xl" mb="0.5rem">
+        Story sub-title
+      </Text>
 
       <Image
         borderRadius="0.75rem"
