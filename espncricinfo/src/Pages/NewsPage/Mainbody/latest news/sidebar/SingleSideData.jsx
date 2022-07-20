@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
+
 const SingleSideData = ({ item }) => {
   return (
     <Stack
@@ -15,7 +16,7 @@ const SingleSideData = ({ item }) => {
       <Flex flex={1} overflow="hidden" zIndex="1" borderRadius="6px">
         <Image
           _hover={{
-            transform: "scale(1.1)",
+            transform: "scale(1.5)",
             borderRadius: "6px",
           }}
           transition="0.5s all ease-in-out"

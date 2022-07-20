@@ -11,23 +11,15 @@ const SingleData = ({ item, index }) => {
       padding="1rem"
       borderRadius="15px"
     >
-      <Flex
-        flex={1}
-        overflow="hidden"
-       zIndex="1"
-       borderRadius="15px"
-      >
+      <Flex flex={1} overflow="hidden" zIndex="1" borderRadius="15px">
         <Image
           _hover={{
-            transform: "scale(1.1)",
+            transform: "scale(1.15)",
             borderRadius: "15px",
-           
           }}
           transition="0.5s all ease-in-out"
           objectFit="cover"
           zIndex="1 1"
-         
-          
           width={"100%"}
           height={"80%"}
           src={item.urlToImage}
