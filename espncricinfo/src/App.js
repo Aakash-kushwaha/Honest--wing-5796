@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Box } from '@chakra-ui/react';
+import MainNews from './Pages/NewsPage/MainNews';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Cricinfo</h1>
-      abcd
-    </div>
+    <Box>
+      <MainNews/>
+    </Box>
   );
 }
 
