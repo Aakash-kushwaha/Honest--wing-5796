@@ -1,14 +1,11 @@
-
-import './App.css';
-import { Box } from '@chakra-ui/react';
-import MainNews from './Pages/NewsPage/MainNews';
-
-
+import "./App.css";
+import { Box } from "@chakra-ui/react";
+import MainNews from "./Pages/NewsPage/MainNews";
 
 function App() {
   return (
     <Box>
-      <MainNews/>
+      <MainNews />
     </Box>
   );
 }

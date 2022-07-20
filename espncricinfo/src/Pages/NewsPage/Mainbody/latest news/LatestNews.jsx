@@ -5,16 +5,21 @@ import SideBar from "./sidebar/SideBar";
 
 const LatestNews = () => {
   return (
-    <Box maxWidth="82%" display="flex" gap="20px" m="auto" marginTop="2rem">
+    <Box maxWidth={{
+      sm:"90%",
+      md:"95%",
+      lg:"82%"
+    }} display="flex" gap="20px" m="auto" marginTop="2rem">
       <Box width={{
         sm:"100%",
-        md:"70%"
+        md:"100%",
+        lg:"70%"
       }}>
         <MainBody />
       </Box>
       <Box  display={{
         base:"none",
-        md:"none",
+        md:"block",
         lg:"block",
     
        

@@ -8,7 +8,6 @@ const MainNews = () => {
     <Box
       bg="
     #f9f9fb"
-    
     >
       <NewsNav />
       <Box mt="0px">
