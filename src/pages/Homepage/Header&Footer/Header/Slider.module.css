@@ -23,25 +23,11 @@
     padding-right: 0.25rem;
 }
 
-.result{
-    /* border:1px solid blue; */
- 
-}
-
 
 .teams{
     /* border:1px solid rgb(8, 8, 8); */
     display: flex;
     justify-content: space-between;
-
-}
-.teams div{
-    /* border:1px solid rgb(223, 0, 85); */
-    /* width: 150px; */
-}
-
-.resultdiv{
-    /* border:1px solid blue; */
 
 }
 

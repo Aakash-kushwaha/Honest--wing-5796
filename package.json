@@ -12,16 +12,23 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "framer-motion": "^6.5.1",
+<<<<<<< HEAD
+    "json-server": "^0.17.0",
+=======
+>>>>>>> ebd0a78d3e78acb729253c2ef44c3c9a6d607f10
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server": "json-server --port 8080 -- watch db.json",
+    "server": "json-server --port 8080 --watch db.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
