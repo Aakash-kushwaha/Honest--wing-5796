@@ -12,10 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "framer-motion": "^6.5.1",
-<<<<<<< HEAD
     "json-server": "^0.17.0",
-=======
->>>>>>> ebd0a78d3e78acb729253c2ef44c3c9a6d607f10
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
