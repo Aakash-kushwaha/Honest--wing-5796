@@ -1,16 +1,16 @@
-import React from "react";
-import { Box, Image, Heading, Text, Icon, HStack } from "@chakra-ui/react";
+import React, { Fragment } from "react";
+import {
+  Box,
+  Avatar,
+  Image,
+  Heading,
+  Text,
+  Divider,
+  HStack,
+} from "@chakra-ui/react";
+import CircleIcon from "../../component/CircleIcon/CircleIcon";
 
 const StoryContent = () => {
-  const CircleIcon = (props) => (
-    <Icon viewBox="0 0 200 200" {...props}>
-      <path
-        fill="currentColor"
-        d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
-      />
-    </Icon>
-  );
-
   const FooterTitles = [
     "Terms of Use",
     "Privacy Policy",
@@ -42,7 +42,18 @@ const StoryContent = () => {
       <Text fontSize="xl" mb="0.5rem">
         Story sub-title
       </Text>
-
+      <HStack>
+        <Avatar size="md" bg="#03a9f4" mb="1rem" />
+        <Box pb="1rem">
+          <Text fontSize="0.875rem" fontWeight="500">
+            Name
+          </Text>
+          <Divider borderColor="rgba(203,204,206)" />
+          <Text fontSize="0.75rem" color="rgba(108,109,111)">
+            1hr ago
+          </Text>
+        </Box>
+      </HStack>
       <Image
         borderRadius="0.75rem"
         src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_70/lsci/db/PICTURES/CMS/341700/341768.4.jpg"
@@ -104,13 +115,13 @@ const StoryContent = () => {
       <HStack fontSize="0.75rem" mt="1rem">
         {FooterTitles.map((item, index) => {
           if (index === FooterTitles.length - 1) {
-            return <Text>{item}</Text>;
+            return <Text key={item}>{item}</Text>;
           } else {
             return (
-              <>
+              <Fragment key={item}>
                 <Text>{item}</Text>
                 <CircleIcon boxSize={1} />
-              </>
+              </Fragment>
             );
           }
         })}
