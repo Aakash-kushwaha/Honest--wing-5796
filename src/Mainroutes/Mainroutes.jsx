@@ -13,7 +13,7 @@ const Mainroutes = () => {
     <Route path="/" element={<Homepage></Homepage>}></Route>
     <Route path={"/newspage"} element={<MainNews></MainNews>}></Route>
      
-      <Route path="/storypage" element={<Storypage />} />
+      <Route path="/storypage/:id" element={<Storypage />} />
     </Routes>
   );
 };
