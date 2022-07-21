@@ -7,21 +7,43 @@ const key = "";
 // 36227b5154024589a8b8f78b203f1dec
 const MainBody = () => {
   const [newsData, setNewsData] = useState([]);
+<<<<<<< HEAD
+  const [loading,setLoading] = useState(false)
+ 
+  useEffect(() => {
+    setLoading(true)
+=======
 
   useEffect(() => {
+>>>>>>> 28b7a4bad93b0c72a6980e1ff664495c7708ba97
     axios
       .get(
         `https://databasefornewsapp.herokuapp.com/criket`
       )
       .then((res) => {
+<<<<<<< HEAD
+        setLoading(false)
+        console.log(res)
+        setNewsData(res.data.articles);
+        
+      })
+      .then((err) => {
+       setLoading(false)
+        console.log(err)
+=======
         setNewsData(res.data);
       })
       .catch((err) => {
         console.log(err);
+>>>>>>> 28b7a4bad93b0c72a6980e1ff664495c7708ba97
       });
   }, []);
 
   return (
+    <>
+    {
+loading?<Box>....loading</Box>:
+   
     <Box
       border="1px solid #f4f5f7"
       bg={"white"}
@@ -40,7 +62,7 @@ const MainBody = () => {
           return <SingleData key={index} item={item} index={index} />;
         })}
     </Box>
-  );
+  } </> );
 };
 
 export default MainBody;
