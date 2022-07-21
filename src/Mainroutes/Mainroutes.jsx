@@ -12,7 +12,7 @@ const Mainroutes = () => {
     <Route path={"/slider"} element={<SimpleSlider></SimpleSlider>}></Route>
     <Route path="/" element={<Homepage></Homepage>}></Route>
     <Route path={"/newspage"} element={<MainNews></MainNews>}></Route>
-     
+    <Route path={"/newspage/covid"} />
       <Route path="/storypage" element={<Storypage />} />
     </Routes>
   );
