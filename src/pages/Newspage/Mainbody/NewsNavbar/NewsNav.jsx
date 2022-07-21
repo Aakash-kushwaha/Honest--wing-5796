@@ -52,9 +52,7 @@ const NewsNav = () => {
             </Text>
           </Box>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-            {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
-            ))}
+            
           </HStack>
         </HStack>
       </Flex>

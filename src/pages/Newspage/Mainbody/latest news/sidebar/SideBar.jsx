@@ -2,7 +2,8 @@ import React, { useEffect, useState }  from "react";
 import { Box, Text } from "@chakra-ui/react";
 import SingleSideData from "./SingleSideData";
 import axios from 'axios';
-const key = "cf8a2c481ce94d8596a511a5c6922f39";
+const key = "36227b5154024589a8b8f78b203f1dec";
+// 36227b5154024589a8b8f78b203f1dec
 const SideBar = () => {
     const [newsData, setNewsData] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -11,10 +12,10 @@ const SideBar = () => {
       setLoading(true);
       axios
         .get(
-          `https://newsapi.org/v2/everything?q=sports&from=2022-06-20&sortBy=publishedAt&apiKey=${key}`
+          `https://databasefornewsapp.herokuapp.com/sports`
         )
         .then((res) => {
-          setNewsData(res.data.articles);
+          setNewsData(res.data);
           setLoading(false);
         })
         .then((err) => {

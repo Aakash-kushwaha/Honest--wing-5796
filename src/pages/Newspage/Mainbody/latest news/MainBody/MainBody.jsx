@@ -3,23 +3,21 @@ import React, { useEffect, useState } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import axios from "axios";
 import SingleData from "./SingleData";
-const key = "cf8a2c481ce94d8596a511a5c6922f39";
+const key = "";
+// 36227b5154024589a8b8f78b203f1dec
 const MainBody = () => {
   const [newsData, setNewsData] = useState([]);
- 
+
   useEffect(() => {
-    
     axios
       .get(
-        `https://newsapi.org/v2/everything?q=cricket&from=2022-06-20&sortBy=publishedAt&apiKey=${key}`
+        `https://databasefornewsapp.herokuapp.com/criket`
       )
       .then((res) => {
-        setNewsData(res.data.articles);
-        
+        setNewsData(res.data);
       })
-      .then((err) => {
-       
-        console.log(err)
+      .catch((err) => {
+        console.log(err);
       });
   }, []);
 
