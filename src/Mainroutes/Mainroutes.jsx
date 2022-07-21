@@ -4,7 +4,7 @@ import SimpleSlider from "../pages/Homepage/Header&Footer/Header/Slider";
 import Homepage from "../pages/Homepage/Homepage";
 import MainNews from "../pages/Newspage/MainNews";
 import Storypage from "../pages/Storypage/Storypage";
-
+import Scoredescription from "../pages/Scoredescription/Scoredescription";
 const Mainroutes = () => {
   return (
       

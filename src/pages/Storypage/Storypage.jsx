@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import StoryNavigationLeft from "./StoryNavigationLeft";
+import StoryNavigationLeft from "./StoryNavigationLeft/StoryNavigationLeft";
 import StoryContent from "./StoryContent";
 
 const Storypage = () => {
