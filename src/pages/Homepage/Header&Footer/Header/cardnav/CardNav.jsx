@@ -19,7 +19,7 @@ const getdata=()=>{
 
   React.useEffect(() => {
 
-    // getdata()
+    getdata()
 
     setInterval(() => {
         // getdata()
