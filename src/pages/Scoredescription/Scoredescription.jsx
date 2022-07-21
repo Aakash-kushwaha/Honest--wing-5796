@@ -26,10 +26,10 @@ const Scoredescription = () => {
  
 
 
-  <Box border='1px solid blue' borderRadius='lg' w='90%'   backgroundColor={""}  marginTop={"0px"}   >
+  <Box border='' borderRadius='lg' w='90%'   backgroundColor={""}  marginTop={"0px"}   >
  
   
-    <Box border='1px solid tomato' borderRadius='lg' w='71%' marginLeft={"150px"} backgroundColor={"lightgrey"} marginBottom={""} >
+    <Box border='' borderRadius='lg' w='71%' marginLeft={"150px"} backgroundColor={"lightgrey"} marginBottom={""} >
     
   
       <TableContainer>
@@ -49,7 +49,7 @@ const Scoredescription = () => {
   </Table>
 </TableContainer>
     </Box>
-    <Box border='1px solid green' borderRadius='lg' w='80%' marginLeft={"150px"} marginTop={""}  backgroundColor="whitesmoke">
+    <Box border='' borderRadius='lg' w='80%' marginLeft={"150px"} marginTop={""}  backgroundColor="whitesmoke">
     <TableContainer>
   <Table variant='' colorScheme='teal'>
     
@@ -265,7 +265,7 @@ const Scoredescription = () => {
 </Box>
 
 </Box>
-<Box border='1px solid red' borderRadius='lg' w='20%'  marginLeft={""} backgroundColor={"lightgrey"} padding={"9px"}>
+<Box border='' borderRadius='lg' w='20%'  marginLeft={""} backgroundColor={"lightgrey"} padding={"9px"}>
  
  <Box>   
            <Heading>ANDY SCHOLAR</Heading>
@@ -320,7 +320,7 @@ const Scoredescription = () => {
            <Link _hover={{color: "blue"}} >Graeme Smith in charge of SA's T20 league</Link>
        </Box>
        <Box>   
-           <Heading>ANDY SCHOLAR</Heading>
+           <Heading>South Africa Cricket Board</Heading>
            <Text>FRANCHISE CRICKET</Text>
        </Box>
        <Box>
@@ -343,7 +343,31 @@ const Scoredescription = () => {
  
  espncricinfo.com</Text>
        </Box>
-     
+       <Box>   
+           <Heading>Daniel Brettig 🏏
+</Heading>
+           <Text></Text>
+       </Box>
+       <Box>
+           <Heading></Heading>
+           <Text> <Box>
+           <Heading>@Des</Heading>
+           <Text>Good piece by @ESPNcricinfo's @FirdoseM on the future of cricket.
+           <Box>
+           <Image src=' https://pbs.twimg.com/card_img/1548343883179823104/OK0eGiVk?format=jpg&name=600x314' alt='l1' />
+       </Box>
+          
+ 
+ 
+ 
+ Explainer: What has CSA done, and how will it impact cricket's future?
+ What happens if South Africa fail to qualify for the World Cup? And what are the implications for the ODI format?
+ 
+ espncricinfo.com</Text>
+       </Box>
+ 
+ espncricinfo.com</Text>
+       </Box>
  </Box>
  </div>
 
