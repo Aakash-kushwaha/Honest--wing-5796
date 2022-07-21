@@ -7,7 +7,7 @@ import Homepage from "../pages/Homepage/Homepage";
 import MainNews from "../pages/Newspage/MainNews";
 import Scoredescription from "../pages/Scoredescription/Scoredescription";
 import Storypage from "../pages/Storypage/Storypage";
-import Scoredescription from "../pages/Scoredescription/Scoredescription";
+
 const Mainroutes = () => {
   return (
       
@@ -17,7 +17,7 @@ const Mainroutes = () => {
     <Route path="/" element={<Homepage></Homepage>}></Route>
     <Route path={"/newspage"} element={<MainNews></MainNews>}></Route>
     
-      <Route path="/storypage" element={<Storypage />} />
+      <Route path="/storypage/:id" element={<Storypage />} />
     </Routes>
   );
 };
