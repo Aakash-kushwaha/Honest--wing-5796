@@ -16,7 +16,6 @@ const Mainroutes = () => {
       <Route path={"/newspage"} element={<MainNews></MainNews>}></Route>
       <Route path={"/newspage/Covid-19"} element={<CovidPage />} />
       <Route path={"/newspage/Racism"} element={<RacismPage />} />
-
       <Route path="/storypage/:id" element={<Storypage />} />
     </Routes>
   );
