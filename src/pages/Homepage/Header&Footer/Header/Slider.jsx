@@ -16,14 +16,15 @@ export default function SimpleSlider({
 
 
 
-//   console.log(data);
+  console.log(Data);
 
   var settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow:`${Data.length>=4?4:Data.length}`,
     slidesToScroll: 1,
+    outerWidth:400
   };
   return (
     <div>
@@ -31,7 +32,7 @@ export default function SimpleSlider({
  
     <div className={styles.maincontainer}>
   
-      <Slider {...settings}>
+      <Slider {...settings} >
         {Data?.map((el) => {
           return (
            <SliderCard key={el.id} el={el} ></SliderCard>
