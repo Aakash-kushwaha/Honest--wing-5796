@@ -1,0 +1,101 @@
+.MainNavbar{
+    background-color:#0398DC;    
+    border: 1px solid red;
+}
+
+.container{
+    border:1px solid black;
+    width: 90%;
+    /* margin-left:3rem ;
+    margin-right: 3rem; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    color: white;
+   
+}
+
+.logomenu{
+
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 60%; */
+    justify-content: space-between;
+    display: flex
+}
+
+.hovermenu{
+    border:1px solid red;
+    display: flex;
+}
+
+
+.hovermenu>div:hover div{
+
+    display: block;
+    position: absolute;
+}
+
+
+li{
+    list-style: none;
+}
+
+.hovermenu>div{
+
+   margin: 5px;
+   padding: 5px;
+}
+
+
+.submenu1{
+display: none;
+margin-top: 0.4rem;
+background-color: white;
+color: black;
+width: 200px;
+border: 1px solid black;
+padding: 1rem;
+}
+
+.submenu2{
+    /* float: right; */
+    display: none;
+    margin-top: 0.4rem;
+    background-color: white;
+    color: black;
+    /* width: 400px; */
+    height: auto;
+  
+    }
+  li:hover{
+    background-color:#b5dff3;   }
+    .submenu2 >div{
+        border:1px solid black;
+        width: 200px;
+        padding:1rem    ;
+        background-color: white;
+    }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightmenu{
+    display: flex;
+    margin:0.25rem;
+    padding: 00.25rem;
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import CardNav from "../pages/Homepage/Header&Footer/Header/cardnav/CardNav";
+import MainNavbar from "../pages/Homepage/Header&Footer/Header/Mainnavbar/MainNavbar";
 import SimpleSlider from "../pages/Homepage/Header&Footer/Header/Slider";
 import Homepage from "../pages/Homepage/Homepage";
 import MainNews from "../pages/Newspage/MainNews";
