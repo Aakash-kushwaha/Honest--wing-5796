@@ -31,7 +31,7 @@ import {
       </Text>
     );
   };
-  
+  // footer done
   export default function Footer() {
     return (
       <Box
