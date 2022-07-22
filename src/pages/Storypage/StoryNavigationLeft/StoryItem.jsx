@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import CircleIcon from "../../../component/CircleIcon/CircleIcon";
 
-const StoryItem = () => {
+const StoryItem = (props) => {
+  console.log("Story Item:", props.data);
   return (
     <Fragment>
       <Heading as="h6" size="xs">

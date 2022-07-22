@@ -1,31 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box } from "@chakra-ui/react";
 import StoryItem from "./StoryItem";
+import { NewsContext } from "../../../context/NewsContext";
 
 const StoryNavigationLeft = () => {
+  // const { news } = useContext(NewsContext);
+  // console.log(news);
+
   return (
     <Box mt="2rem">
-      <Box p="1rem">
-        <StoryItem />
-      </Box>
-      <Box p="1rem">
-        <StoryItem />
-      </Box>
-      <Box p="1rem">
-        <StoryItem />
-      </Box>
-      <Box p="1rem">
-        <StoryItem />
-      </Box>
-      <Box p="1rem">
-        <StoryItem />
-      </Box>
-      <Box p="1rem">
-        <StoryItem />
-      </Box>
-      <Box p="1rem">
-        <StoryItem />
-      </Box>
+      {/* {stories.map((story) => {
+          return (
+            <Box p="1rem" key={story.title}>
+              <StoryItem data={story} />
+            </Box>
+          );
+        })} */}
     </Box>
   );
 };
