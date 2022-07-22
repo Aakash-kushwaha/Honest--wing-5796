@@ -49,7 +49,7 @@ const NewsNav = () => {
             >
               {Links.map((link) => {
                 return (
-                  <NavLink key={link} to={`${link}`}>
+                  <NavLink key={link} to={`/newspage/${link}`}>
                     {link}
                   </NavLink>
                 );
