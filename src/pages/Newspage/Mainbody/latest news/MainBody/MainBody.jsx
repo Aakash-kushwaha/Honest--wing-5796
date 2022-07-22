@@ -18,7 +18,7 @@ const MainBody = () => {
       .then((res) => {
         setLoading(false)
         console.log(res)
-        setNewsData(res.data.articles);
+        setNewsData(res.data);
         
       })
       .then((err) => {
