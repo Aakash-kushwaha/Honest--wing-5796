@@ -1,10 +1,11 @@
 .MainNavbar{
     background-color:#0398DC;    
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    
 }
 
 .container{
-    border:1px solid black;
+    /* border:1px solid black; */
     width: 90%;
     /* margin-left:3rem ;
     margin-right: 3rem; */
@@ -17,14 +18,14 @@
 
 .logomenu{
 
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 60%; */
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 55%;
     justify-content: space-between;
     display: flex
 }
 
 .hovermenu{
-    border:1px solid red;
+    /* border:1px solid  red; */
     display: flex;
 }
 
@@ -53,8 +54,15 @@ margin-top: 0.4rem;
 background-color: white;
 color: black;
 width: 200px;
-border: 1px solid black;
-padding: 1rem;
+/* border: 1px solid black; */
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+z-index: 1;
+
+}
+
+.submenu1>li{
+    line-height: 2.5rem;
+    padding: .25rem;
 }
 
 .submenu2{
@@ -69,14 +77,39 @@ padding: 1rem;
     }
   li:hover{
     background-color:#b5dff3;   }
+
+
     .submenu2 >div{
-        border:1px solid black;
-        width: 200px;
-        padding:1rem    ;
+        /* border:1px solid black; */
+        width: 250px;
+    /* padding:1rem  ; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 1;
         background-color: white;
+    }
+    .submenu2>div>li{
+    padding:.5rem  
+
+    }
+    .submenu2 >div>li{
+        line-height: 2rem;
     }
 
 
+    .logo{
+        height: 48px;
+        width: 138px;
+        padding-top: .8rem;
+        /* border: 1px solid white; */
+        
+
+    }
+    .logo>img{
+        height: 20px;
+        width: 138px;
+         
+        
+    }
   
 
 
@@ -95,7 +128,53 @@ padding: 1rem;
 
 
 .rightmenu{
+    /* width: 30%; */
+    /* border: 1px solid white; */
     display: flex;
-    margin:0.25rem;
-    padding: 00.25rem;
+    /* justify-content: space-around; */
+    /* margin-top:0.25rem; */
+    /* padding-top: 00.25rem; */
+    /* text-align: center; */
+    /* margin: 5px;
+    padding: 5px; */
+}
+.rightmenu>div{
+    /* border:2px solid green; */
+    /* height: 70%; */
+    margin: auto;
+}
+
+.fantasyhovermenu >div{
+    margin-top: .4rem;
+ /* border: 1px solid #000; */
+   position: absolute;
+   width: 170px;
+   background-color: white;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   z-index: 1;
+   
+  
+}
+
+
+
+.fantasyhovermenu>div>li{
+    padding: .5rem;
+    line-height: 2rem;
+}
+
+.fantasyhovermenu>div~div{
+    margin-left: 10rem ;
+  
+}
+
+.fantasy>.fantasyhovermenu{
+    display: none;
+    /* position: absolute; */
+    color: black;
+    background: white;
+}
+
+.fantasy:hover .fantasyhovermenu{
+    display: block;
 }
