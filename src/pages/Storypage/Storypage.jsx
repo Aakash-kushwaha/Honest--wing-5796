@@ -5,7 +5,7 @@ import StoryContent from "./StoryContent";
 
 const Storypage = () => {
   return (
-    <Box display="flex" justifyContent="space-between" w="90%" ml="4.5rem">
+    <Box display="flex" justifyContent="space-between" p="2rem">
       <Box
         w="300px"
         border="1px"

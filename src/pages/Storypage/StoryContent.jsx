@@ -69,7 +69,12 @@ const StoryContent = () => {
           <Heading as="h2" size="xl" mb="0.5rem">
             {singleNews.title}
           </Heading>
-          <Text fontSize="xl" mb="0.5rem">
+          <Text
+            fontSize="1.125rem"
+            mb="0.5rem"
+            color={"rgba(72,73,74)"}
+            lineHeight="1.75rem"
+          >
             {singleNews.description}
           </Text>
 
