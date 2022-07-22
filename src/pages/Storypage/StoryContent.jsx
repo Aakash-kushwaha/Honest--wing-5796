@@ -4,7 +4,8 @@ import {
   Image,
   Heading,
   Text,
-  Icon,
+  Divider,
+  Avatar,
   HStack,
   Spinner,
 } from "@chakra-ui/react";
@@ -32,6 +33,7 @@ const StoryContent = () => {
   useEffect(() => {
     getSingleNews(id);
   }, [id]);
+  console.log(singleNews);
 
   const FooterTitles = [
     "Terms of Use",
@@ -77,7 +79,20 @@ const StoryContent = () => {
           >
             {singleNews.description}
           </Text>
-
+          {singleNews.author && (
+            <HStack>
+              <Avatar size="md" bg="#03a9f4" mb="1rem" />
+              <Box pb="1rem">
+                <Text fontSize="0.875rem" fontWeight="500">
+                  {singleNews.author}
+                </Text>
+                <Divider borderColor="rgba(203,204,206)" />
+                <Text fontSize="0.75rem" color="rgba(108,109,111)">
+                  {singleNews.id % 2 === 0 ? "4hr" : "1d"}
+                </Text>
+              </Box>
+            </HStack>
+          )}
           <Image borderRadius="0.75rem" src={singleNews.urlToImage} />
           <Text p="0 15%" mt="2rem">
             {singleNews.content}

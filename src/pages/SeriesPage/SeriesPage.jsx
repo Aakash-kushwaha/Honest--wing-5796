@@ -8,10 +8,14 @@ const SeriesPage = () => {
   return (
     <div>
       <Tabs>
-        <TabList>
-          <Tab>Current Cricket</Tab>
-          <Tab>Future Series/Tournaments</Tab>
-          <Tab>Recently Concluded</Tab>
+        <TabList
+          colorScheme={"#439ec9"}
+          borderBottom={"1px solid #c7c7c7"}
+          background={"#EEEEEE"}
+        >
+          <Tab fontWeight="bold">Current Cricket</Tab>
+          <Tab fontWeight="bold">Future Series/Tournaments</Tab>
+          <Tab fontWeight="bold">Recently Concluded</Tab>
         </TabList>
 
         <TabPanels>
