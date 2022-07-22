@@ -1,21 +1,35 @@
-import React, { useContext } from "react";
+import React, { useEffect, useState } from "react";
 import { Box } from "@chakra-ui/react";
 import StoryItem from "./StoryItem";
-import { NewsContext } from "../../../context/NewsContext";
+import axios from "axios";
 
 const StoryNavigationLeft = () => {
-  // const { news } = useContext(NewsContext);
-  // console.log(news);
+  const [news, setNews] = useState([]);
+
+  const getData = () => {
+    axios
+      .get("http://localhost:8080/articles")
+      .then((r) => {
+        setNews(r.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <Box mt="2rem">
-      {/* {stories.map((story) => {
-          return (
-            <Box p="1rem" key={story.title}>
-              <StoryItem data={story} />
-            </Box>
-          );
-        })} */}
+      {news.map((news) => {
+        return (
+          <Box p="1rem" key={news.id}>
+            <StoryItem data={news} />
+          </Box>
+        );
+      })}
     </Box>
   );
 };
