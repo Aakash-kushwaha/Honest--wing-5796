@@ -6,6 +6,7 @@ import SimpleSlider from "../pages/Homepage/Header&Footer/Header/Slider";
 import Homepage from "../pages/Homepage/Homepage";
 import MainNews from "../pages/Newspage/MainNews";
 import Storypage from "../pages/Storypage/Storypage";
+import Teampage from "../pages/Teampage/Teampage";
 const Mainroutes = () => {
   return (<>
   {/* <CardNav></CardNav>
@@ -18,6 +19,7 @@ const Mainroutes = () => {
     <Route path={"/newspage"} element={<MainNews></MainNews>}></Route>
     
       <Route path="/storypage/:id" element={<Storypage />} />
+      <Route path='/teampage' element={<Teampage />} />
     </Routes>
     </> );
 };

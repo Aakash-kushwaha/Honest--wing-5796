@@ -1,10 +1,10 @@
-import { Box } from "@chakra-ui/react";
 import React from "react";
+import { Box } from "@chakra-ui/react";
+import RacismMainBody from "./racismMainBody/RacismMainBody";
+import RacismSideBar from "./racismSideBar/RacismSideBar";
 import NewsNav from "../Mainbody/NewsNavbar/NewsNav";
-import CovidMainBody from "./CovidMainBody/CovidMainBody";
-import CovidSideBar from "./CovidSideBar/CovidSideBar";
 
-const CovidPage = () => {
+const RacismPage = () => {
   return (
     <>
       <NewsNav />
@@ -26,7 +26,7 @@ const CovidPage = () => {
             lg: "70%",
           }}
         >
-          <CovidMainBody />
+          <RacismMainBody />
         </Box>
         <Box
           display={{
@@ -39,11 +39,11 @@ const CovidPage = () => {
             md: "28%",
           }}
         >
-          <CovidSideBar />
+          <RacismSideBar />
         </Box>
       </Box>
     </>
   );
 };
 
-export default CovidPage;
+export default RacismPage;
