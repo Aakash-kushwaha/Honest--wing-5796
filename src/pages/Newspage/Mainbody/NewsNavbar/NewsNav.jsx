@@ -63,7 +63,7 @@ const NewsNav = () => {
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => {
                 return (
-                  <NavLink key={link} to={`${link}`}>
+                  <NavLink key={link} to={`/newspage/${link}`}>
                     {link}
                   </NavLink>
                 );

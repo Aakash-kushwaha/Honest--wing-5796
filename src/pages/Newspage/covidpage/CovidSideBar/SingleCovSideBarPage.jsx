@@ -21,8 +21,8 @@ const SingleCovSideBarPage = ({item}) => {
           transition="0.5s all ease-in-out"
           objectFit="cover"
           zIndex="1 1"
-          width={"100%"}
-          height={"80%"}
+          width="100%"
+          height="80%"
           src={item.urlToImage}
           alt="Cricket latest news"
           borderRadius="7px"
