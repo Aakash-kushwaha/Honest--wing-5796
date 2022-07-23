@@ -24,7 +24,7 @@ const MiddlePart = () => {
   },[]);
 
   return (
-    <Box >
+    <Box w='51%' >
       {loading && <Box m='18rem 0 0 18rem'><Spinner color='blue.500' size='xl' /></Box>}
       {data?.map(d => (
         <NewsCard key={d.id} {...d} />
