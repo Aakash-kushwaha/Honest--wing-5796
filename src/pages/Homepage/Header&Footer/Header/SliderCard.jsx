@@ -2,6 +2,13 @@ import React from 'react'
 import styles from "./Slider.module.css";
 
 const SliderCard = ({el}) => {
+
+
+  
+
+
+
+  console.log(el)
   return (
    
      <div key={el.id} className={styles.container}>
@@ -17,7 +24,7 @@ const SliderCard = ({el}) => {
             
                 <div>
                   {el.score[0].r}
-                  {el.score[1] && `&${el.score[1].r}`}
+                  {el.score[1] && `/${el.score[1].r}`}
                 </div>
               </div>
            
@@ -27,7 +34,7 @@ const SliderCard = ({el}) => {
               <div>{el.teamInfo[1].shortname}</div>
               </div>
                 <div>
-                  {el.score[1]?.r} {el.score[2] && `&${el.score[2].r}`}
+                  {el.score[1]?.r} {el.score[2] && `/${el.score[2].r}`}
                 </div>
              
               

@@ -1,40 +1,50 @@
 import React from "react";
 import styles from "./MainNavbar.module.css";
 import { Link } from "react-router-dom";
-import { Box, Button, Icon, useColorMode, Search2Icon } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { VscBell } from "react-icons/vsc";
-import { BsGrid3X3Gap } from "react-icons/bs";
-import { TbLanguage } from "react-icons/tb";
-import { HiOutlineSearch } from "react-icons/hi";
+import { Box, Button, Icon, useColorMode,Search2Icon } from "@chakra-ui/react";
+import {MoonIcon,SunIcon} from "@chakra-ui/icons"
+import {VscBell} from "react-icons/vsc"
+import {BsGrid3X3Gap} from "react-icons/bs"
+import {TbLanguage} from "react-icons/tb"
+import {HiOutlineSearch} from "react-icons/hi"
 
 import { data } from "../data.js";
 // console.log(data,"data")
 
 const MainNavbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const [search, setSearch] = React.useState(false);
-  const ref = React.useRef();
+  const {colorMode,toggleColorMode}= useColorMode()
+  const [search,setSearch]= React.useState(false)
+  const ref = React.useRef()
 
-  const runfunction = () => {};
+  const runfunction=()=>{
 
-  // let catched = document.body
+  }
+ 
+// let catched = document.body
 
-  const handleclick = () => {};
-  console.log(search);
-  // console.log(catched)
-  React.useEffect(() => {
-    let catched = document.body;
-    ref.current = catched;
-    ref.current.click(setSearch(false));
-  }, [search]);
+const handleclick=()=>{
+  
+ 
+}
+console.log(search)
+// console.log(catched)
+// React.useEffect(()=>{
+//   let catched = document.body
+//   ref.current = catched
+//    ref.current.click(setSearch(false))
+// },[search])
+ 
+
+
+
+
 
   return (
     <div className={styles.MainNavbar}>
       <div className={styles.container}>
         <div className={styles.logomenu}>
           <div className={styles.logo}>
-            <img src="https://wassets.hscicdn.com/static/images/logo.png" />
+            <img src="https://wassets.hscicdn.com/static/images/logo.png"></img>
           </div>
           <div className={styles.hovermenu}>
             <div>
@@ -324,89 +334,56 @@ const MainNavbar = () => {
           </div>
         </div>
         <div className={styles.rightmenu}>
-          <div style={{ display: "flex", gap: "5px" }}>
-            <img
-              src="https://wassets.hscicdn.com/static/images/fantasy-home.png"
-              width="20px"
-            ></img>
-            Fantasy
-          </div>
+
+          <div style={{display:"flex",gap:"5px"}}>
+          <img src="https://wassets.hscicdn.com/static/images/fantasy-home.png" width="20px"></img>
+          Fantasy</div>
           <div className={styles.fantasy}>
             Edition IN
             <div className={styles.fantasyhovermenu}>
-              <div>
-                <li>
-                  <Link to="/"> Africa</Link>
-                </li>
-                <li>
-                  <Link to="/"> Bangladesh</Link>
-                </li>
-                <li>
-                  <Link to="/"> India-Hindi</Link>
-                </li>
-                <li>
-                  <Link to="/"> Pakistan</Link>
-                </li>
-                <li>
-                  <Link to="/"> United Kingdom</Link>
-                </li>
-              </div>
-              <div>
-                <li>
-                  <Link to="/"> Australia</Link>
-                </li>
-                <li>
-                  <Link to="/"> India</Link>
-                </li>
-                <li>
-                  <Link to="/"> New Zealand</Link>
-                </li>
-                <li>
-                  <Link to="/"> Sri Lanka</Link>
-                </li>
-                <li>
-                  <Link to="/"> United Sates</Link>
-                </li>
-              </div>
+            <div>
+            <li>
+                <Link to="/"> Africa</Link>
+              </li>
+              <li>
+                <Link to="/"> Bangladesh</Link>
+              </li>
+              <li>
+                <Link to="/"> India-Hindi</Link>
+              </li>
+              <li>
+                <Link to="/"> Pakistan</Link>
+              </li>
+              <li>
+                <Link to="/"> United Kingdom</Link>
+              </li>
+            </div>
+            <div >
+              <li>
+                <Link to="/"> Australia</Link>
+              </li>
+              <li>
+                <Link to="/"> India</Link>
+              </li>
+              <li>
+                <Link to="/"> New Zealand</Link>
+              </li>
+              <li>
+                <Link to="/"> Sri Lanka</Link>
+              </li>
+              <li>
+                <Link to="/"> United Sates</Link>
+              </li>
+            </div>
             </div>
           </div>
-          <div style={{ marginTop: "2px" }}>
-            <Button
-              bg={"#0398DC"}
-              _hover={{ bg: "#0398DC" }}
-              onClick={() => toggleColorMode(!colorMode)}
-            >
-              {" "}
-              {colorMode === "light" ? (
-                <MoonIcon w={"23px"} height="23px"></MoonIcon>
-              ) : (
-                <SunIcon w={"23px"} height="23px"></SunIcon>
-              )}
-            </Button>
-          </div>
-          <div>
-            <VscBell
-              style={{ height: "25px", width: "25px", color: "white" }}
-            ></VscBell>
-          </div>
-          <div>
-            <TbLanguage
-              style={{ height: "25px", width: "25px", color: "white" }}
-            ></TbLanguage>
-          </div>
-          <div>
-            <BsGrid3X3Gap
-              style={{ height: "22px", width: "22px", color: "white" }}
-            ></BsGrid3X3Gap>
-          </div>
-          <div onClick={() => setSearch(!search)}>
-            {search ? (
-              <input></input>
-            ) : (
-              <HiOutlineSearch
-                style={{ height: "22px", width: "22px", color: "white" }}
-              ></HiOutlineSearch>
-            )}
+          <div style={{marginTop:"2px"}}><Button bg={"#0398DC"}  _hover={{ bg: '#0398DC' }} onClick={()=>toggleColorMode(!colorMode)}> {colorMode==="light"?<MoonIcon w={"23px"} height="23px" 
+        ></MoonIcon>:<SunIcon w={"23px"} height="23px"></SunIcon>}</Button></div>
+          <div ><VscBell style={{height:"25px",width:"25px",color:"white"}} ></VscBell></div>
+          <div><TbLanguage style={{height:"25px",width:"25px",color:"white"}}></TbLanguage></div>
+          <div><BsGrid3X3Gap style={{height:"22px",width:"22px",color:"white"}}></BsGrid3X3Gap></div>
+          <div onClick={()=>setSearch(!search)}>
+         {search?<input></input> :<HiOutlineSearch  style={{height:"22px",width:"22px",color:"white"}}></HiOutlineSearch>}
           </div>
         </div>
       </div>

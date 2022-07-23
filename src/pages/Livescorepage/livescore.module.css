@@ -1,0 +1,140 @@
+.container{
+    /* border:2px solid black; */
+    width:95%;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.leftside{
+    /* display: flex; */
+    /* border:1px solid red; */
+    width:67%
+}
+
+.topnav{
+    display: flex;
+    /* border:1px solid teal; */
+    justify-content: space-between;
+    height: 44px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.topnav>div{
+/* border:1px solid black; */
+width: 258px;
+text-align: center;
+width: 258px;
+font-weight: 500;
+padding-top: 0.3rem;
+
+}
+
+
+
+
+.secondnav{
+ display: flex;
+ /* border:1px solid teal; */
+margin-bottom: 1rem;
+ justify-content: space-between;
+ height: 44px;
+ box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.secondnav div{
+    /* border:1px solid blue; */
+    width: 258px;
+text-align: center;
+/* font-size: 12px; */
+font-family:sans-serif;
+line-height: 16px;
+padding-top: 0.5rem;
+ 
+}
+
+
+.cardsbox{
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    /* gap:1rem */
+}
+.cardsbox>div{
+    border:1px solid whitesmoke;
+    width:99%;
+    margin-bottom: 2rem;
+    border-radius: 0px;
+    margin: auto;
+}
+
+
+
+.bottomnews{
+    /* border:1px solid green; */
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightside{
+    /* display: flex; */
+    /* border:1px solid rgb(26, 25, 25); */
+    width: 27%;
+
+}
+.quicklinks{
+    /* height: 300px; */
+    /* border:1px solid red; */
+    width: 100%;
+    /* padding: 1rem; */
+}
+.links{
+    /* border:1px solid teal; */
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+    /* height: 90%; */
+}
+.links >div{
+    padding: 0.5rem;
+    /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */
+    font-weight: 500;
+
+}
+
+.Newcard{
+    /* border:2px solid blue; */
+    /* height: 300px; */
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    font-weight: 400;
+
+}
+.Newcard>img{
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.Newcard>img:hover{
+    transform: scale(1.05);
+    
+}

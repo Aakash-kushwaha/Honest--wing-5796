@@ -28,6 +28,14 @@
     margin-bottom:5px;
     padding-left:0.25rem;
     padding-right: 0.25rem;
+
+}
+.result{
+    font-weight: 500;
+}
+
+.resultdiv{
+    font-weight: 400;
 }
 
 
@@ -35,6 +43,7 @@
     /* border:1px solid rgb(8, 8, 8); */
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
 
 }
 
@@ -42,5 +51,6 @@
     /* border:1px solid blue; */
     display: flex;
     gap: 1rem;
+    font-weight: 500;
     
 }
