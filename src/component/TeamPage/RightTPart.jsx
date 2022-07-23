@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Link, Text } from '@chakra-ui/react';
 import PlayerCard from './PlayerCard';
 import { AusTestBatters, AusOdiBatters, AusT20IBatters, AusTestBowlers, AusOdiBowlers, AusT20IBowlers} from './PlayerData';
-import RightPart from '../HomePage/RightPart';
+import RightPart from './RightPart';
 
 
 const RightTPart = () => {
@@ -47,7 +47,7 @@ const RightTPart = () => {
 
 
   return (
-    <Box border='1px solid blue' w='24%'>
+    <Box w='24%'>
       <Box border='1px' borderColor="gray.200" borderRadius='xl' mb='1rem' boxShadow= 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
         <Box p='1rem' borderBottom='1px' borderColor="gray.200">
           <Text fontWeight='700'>Top Run Scorers</Text>

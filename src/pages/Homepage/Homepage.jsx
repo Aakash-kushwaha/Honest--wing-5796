@@ -7,9 +7,9 @@ import { Box } from '@chakra-ui/react';
 const Homepage = () => {
   return (
     <Box display='flex' w='91%' justifyContent='space-between' m='auto'>
-        <LeftPart w='21%' />
-        <MiddlePart w='51%' />
-        <RightPart w='24%' />
+        <LeftPart />
+        <MiddlePart />
+        <RightPart />
     </Box>
   )
 }

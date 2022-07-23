@@ -4,7 +4,7 @@ import { SearchIcon, ChevronRightIcon } from'@chakra-ui/icons';
 
 const LeftPart = () => {
   return (
-    <Box borderRadius='lg'>
+    <Box w='21%' borderRadius='lg'>
         <Box p='1rem' mb='1rem' border='1px solid grey' borderRadius='lg' cursor='pointer'>
           <Image m='auto' mb='1rem' w='9rem' src='https://wassets.hscicdn.com/static/images/nlp-logo.svg' alt='l1' />
           <Text m='auto' mb='1rem' fontSize='14px' fontWeight='500' textAlign='center'>Which spinner has taken the most wickets in an IPL season?</Text>
