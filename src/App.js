@@ -1,5 +1,4 @@
 import "./App.css";
-git;
 import Mainroutes from "./Mainroutes/Mainroutes";
 import Footer from "./pages/Homepage/Header&Footer/Footer/Footer";
 
