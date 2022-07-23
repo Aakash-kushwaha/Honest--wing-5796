@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MainNavbar.module.css";
-import { Link } from "react-router-dom";
-import { Box, Button, Icon, useColorMode,Search2Icon } from "@chakra-ui/react";
+import { Link, useNavigate } from "react-router-dom";
+import { Box, Button, Icon, useColorMode,Search2Icon, Input } from "@chakra-ui/react";
 import {MoonIcon,SunIcon} from "@chakra-ui/icons"
 import {VscBell} from "react-icons/vsc"
 import {BsGrid3X3Gap} from "react-icons/bs"
@@ -14,18 +14,9 @@ import { data } from "../data.js";
 const MainNavbar = () => {
   const {colorMode,toggleColorMode}= useColorMode()
   const [search,setSearch]= React.useState(false)
+ const navigate = useNavigate()
 
 
-
-
-
-  console.log(search)
-
-// console.log(catched)
-// (window).click(function() {
-//   //Hide the menus if visible
-//   // console.log("heelo window")
-// })
  
 
 
@@ -40,11 +31,11 @@ const MainNavbar = () => {
             <img src="https://wassets.hscicdn.com/static/images/logo.png"></img>
           </div>
           <div className={styles.hovermenu}>
-            <div>
+            <div onClick={()=>navigate("/livescore")}>
               Live Score
               <div className={styles.submenu1}>
                 <li>
-                  <Link to="/">Live Scores Home</Link>
+                  <Link to="/livescore">Live Scores Home</Link>
                 </li>
                 <li>
                   <Link to="/">Week View</Link>
@@ -375,8 +366,8 @@ const MainNavbar = () => {
           <div ><VscBell style={{height:"25px",width:"25px",color:"white"}} ></VscBell></div>
           <div><TbLanguage style={{height:"25px",width:"25px",color:"white"}}></TbLanguage></div>
           <div><BsGrid3X3Gap style={{height:"22px",width:"22px",color:"white"}}></BsGrid3X3Gap></div>
-          <div onClick={()=>setSearch(!search)}>
-         {search?<input></input> :<HiOutlineSearch  style={{height:"22px",width:"22px",color:"white"}}></HiOutlineSearch>}
+          <div onClick={()=>setSearch(true)}>
+         {search?<Input bg={"white"} color={"black"} placeholder="Search player,Team Or Series"></Input> :<HiOutlineSearch  style={{height:"22px",width:"22px",color:"white"}}></HiOutlineSearch>}
           </div>
         </div>
       </div>

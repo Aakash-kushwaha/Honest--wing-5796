@@ -5,7 +5,7 @@ import MainNavbar from '../Mainnavbar/MainNavbar'
 import SimpleSlider from '../Slider'
 import styles from "./cardnav.module.css"
 import {data} from "../data.js"
-console.log(data,"data")
+// console.log(data,"data")
 
 const CardNav = () => {
 
