@@ -4,7 +4,7 @@ import { ChevronRightIcon } from'@chakra-ui/icons';
 
 const RightPart = () => {
   return (
-    <Box w='24%'>
+    <Box display={{base: "none", md: "none", lg: "block"}} w='24%'>
       <Box mb='1rem' border='1px solid grey' borderRadius='lg'>
         <Text p='0.5rem' pl='1rem' borderBottom='1px solid grey' fontSize='14px' fontWeight='500' >News Headlines</Text>
         <Button colorScheme='blue' variant='ghost' color='black' w='100%' justifyContent='left' fontSize='13px' ><ChevronRightIcon color='blue' mr='0.75rem' />Pujara hits yet another double-century</Button>

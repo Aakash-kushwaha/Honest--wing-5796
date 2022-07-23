@@ -6,7 +6,7 @@ import RightTPart from '../../component/TeamPage/RightTPart';
 
 const Teampage = () => {
   return (
-    <Box display='flex' justifyContent='space-between' w='91%' m='auto'>
+    <Box display='flex' justifyContent='space-between' w='91%' m='auto' mt='2rem'>
         <LeftPart />
         <MiddlePart />
         <RightTPart />
