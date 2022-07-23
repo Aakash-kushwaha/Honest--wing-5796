@@ -28,11 +28,11 @@ const handleclick=()=>{
 }
 console.log(search)
 // console.log(catched)
-React.useEffect(()=>{
-  let catched = document.body
-  ref.current = catched
-   ref.current.click(setSearch(false))
-},[search])
+// React.useEffect(()=>{
+//   let catched = document.body
+//   ref.current = catched
+//    ref.current.click(setSearch(false))
+// },[search])
  
 
 

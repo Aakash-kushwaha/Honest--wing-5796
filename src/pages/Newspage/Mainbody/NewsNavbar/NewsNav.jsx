@@ -13,7 +13,7 @@ import {
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { NavLink } from "react-router-dom";
 
-const Links = ["News Home", "Covid-19", "Ball-tempering", "Racism"];
+const Links = ["Covid-19", "Ball-tempering", "Racism"];
 
 const NewsNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -47,9 +47,25 @@ const NewsNav = () => {
               spacing={6}
               display={{ base: "none", md: "flex" }}
             >
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "black" : "black",
+                  fontWeight: isActive ? "700" : "400"
+                })}
+                to={`/newspage`}
+              >
+                News-Home
+              </NavLink>
               {Links.map((link) => {
                 return (
-                  <NavLink key={link} to={`/newspage/${link}`}>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? "black" : "black",
+                      fontWeight: isActive ? "700" : "400"
+                    })}
+                    key={link}
+                    to={`/newspage/${link}`}
+                  >
                     {link}
                   </NavLink>
                 );
@@ -61,9 +77,26 @@ const NewsNav = () => {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "black" : "grey",
+                  fontWeight: isActive ? "700" : "400"
+                })}
+                to={`/newspage`}
+              >
+                News-Home
+              </NavLink>
               {Links.map((link) => {
                 return (
-                  <NavLink key={link} to={`${link}`}>
+                  <NavLink
+                    key={link}
+
+                    style={({ isActive }) => ({
+                      color: isActive ? "black" : "black",
+                      fontWeight: isActive ? "700" : "400"
+                    })}
+                    to={`/newspage/${link}`}
+                  >
                     {link}
                   </NavLink>
                 );

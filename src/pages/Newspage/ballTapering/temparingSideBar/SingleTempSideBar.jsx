@@ -1,9 +1,10 @@
+
 import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
-const SingleCovSideBarPage = ({item}) => {
-  return (
-    <Stack
+const SingleTempSideBar = ({item}) => {
+    return (
+        <Stack
       borderBottom={"1px solid #f4f5f7"}
       w={{ sm: "100%", md: "100%" }}
       height={{ sm: "476px", md: "7rem" }}
@@ -47,7 +48,7 @@ const SingleCovSideBarPage = ({item}) => {
         ></Stack>
       </Stack>
     </Stack>
-  );
-};
+    )
+}
 
-export default SingleCovSideBarPage;
+export default SingleTempSideBar

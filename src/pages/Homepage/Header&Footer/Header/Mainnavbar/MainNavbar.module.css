@@ -131,6 +131,7 @@ z-index: 1;
     /* width: 30%; */
     /* border: 1px solid white; */
     display: flex;
+    gap:.5rem;
     /* justify-content: space-around; */
     /* margin-top:0.25rem; */
     /* padding-top: 00.25rem; */
@@ -156,7 +157,9 @@ z-index: 1;
   
 }
 
-
+.fantasyhovermenu{
+    margin-top: -5px;
+}
 
 .fantasyhovermenu>div>li{
     padding: .5rem;
