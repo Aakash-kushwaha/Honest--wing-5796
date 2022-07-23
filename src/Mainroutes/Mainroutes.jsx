@@ -9,7 +9,13 @@ import SeriesPage from "../pages/SeriesPage/SeriesPage";
 import Storypage from "../pages/Storypage/Storypage";
 import Teampage from "../pages/Teampage/Teampage";
 const Mainroutes = () => {
+<<<<<<< Updated upstream
   return (
+=======
+  return (<>
+  <CardNav></CardNav>
+    <MainNavbar></MainNavbar>
+>>>>>>> Stashed changes
     <Routes>
       <Route path={"/cardnav"} element={<CardNav></CardNav>}></Route>
       <Route path={"/mainnvabar"} element={<MainNavbar></MainNavbar>}></Route>

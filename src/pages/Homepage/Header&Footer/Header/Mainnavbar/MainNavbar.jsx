@@ -14,25 +14,18 @@ import { data } from "../data.js";
 const MainNavbar = () => {
   const {colorMode,toggleColorMode}= useColorMode()
   const [search,setSearch]= React.useState(false)
-  const ref = React.useRef()
 
-  const runfunction=()=>{
 
-  }
- 
-// let catched = document.body
 
-const handleclick=()=>{
-  
- 
-}
-console.log(search)
+
+
+  console.log(search)
+
 // console.log(catched)
-React.useEffect(()=>{
-  let catched = document.body
-  ref.current = catched
-   ref.current.click(setSearch(false))
-},[search])
+// (window).click(function() {
+//   //Hide the menus if visible
+//   // console.log("heelo window")
+// })
  
 
 
