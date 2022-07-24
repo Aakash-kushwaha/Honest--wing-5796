@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import CardNav from "../pages/Homepage/Header&Footer/Header/cardnav/CardNav";
+import CardNav from "../component/Header/Header/cardnav/CardNav";
+
 import Homepage from "../pages/Homepage/Homepage";
 import Livescore from "../pages/Livescorepage/Livescore";
 import MainNews from "../pages/Newspage/MainNews";

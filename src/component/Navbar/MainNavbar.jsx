@@ -8,7 +8,7 @@ import {BsGrid3X3Gap} from "react-icons/bs"
 import {TbLanguage} from "react-icons/tb"
 import {HiOutlineSearch} from "react-icons/hi"
 
-import { data } from "../data.js";
+// import { data } from "../data.js";
 // console.log(data,"data")
 
 const MainNavbar = () => {
@@ -28,8 +28,11 @@ const MainNavbar = () => {
       <div className={styles.container}>
         <div className={styles.logomenu}>
           <div className={styles.logo}>
+          <Link to={"/"}>
             <img src="https://wassets.hscicdn.com/static/images/logo.png"></img>
+            </Link>
           </div>
+
           <div className={styles.hovermenu}>
             <div onClick={()=>navigate("/livescore")}>
               Live Score

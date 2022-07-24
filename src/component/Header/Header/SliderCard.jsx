@@ -8,7 +8,7 @@ const SliderCard = ({el}) => {
 
 
 
-  console.log(el)
+  // console.log(el)
   return (
    
      <div key={el.id} className={styles.container}>

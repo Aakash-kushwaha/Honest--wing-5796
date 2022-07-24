@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import Slider from 'react-slick'
-import MainNavbar from '../Mainnavbar/MainNavbar'
+
 import SimpleSlider from '../Slider'
 import styles from "./cardnav.module.css"
 import {data} from "../data.js"
