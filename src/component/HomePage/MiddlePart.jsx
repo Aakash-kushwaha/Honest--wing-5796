@@ -9,7 +9,7 @@ const MiddlePart = () => {
   const [loading, setLoading] = useState(true);
 
   const getData = () => {
-    axios.get('http://localhost:8080/articles')
+    axios.get('https://databasefornewsapp.herokuapp.com/articles')
     .then(r => {
       setLoading(false);
       setData(r.data);
