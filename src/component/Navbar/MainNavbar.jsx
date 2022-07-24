@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MainNavbar.module.css";
-import { Link, useNavigate } from "react-router-dom";
-import { Box, Button, Icon, useColorMode,Search2Icon, Input } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { Box, Button, Icon, useColorMode,Search2Icon } from "@chakra-ui/react";
 import {MoonIcon,SunIcon} from "@chakra-ui/icons"
 import {VscBell} from "react-icons/vsc"
 import {BsGrid3X3Gap} from "react-icons/bs"
@@ -14,9 +14,25 @@ import {HiOutlineSearch} from "react-icons/hi"
 const MainNavbar = () => {
   const {colorMode,toggleColorMode}= useColorMode()
   const [search,setSearch]= React.useState(false)
- const navigate = useNavigate()
+  const ref = React.useRef()
 
+  const runfunction=()=>{
 
+  }
+ 
+// let catched = document.body
+
+const handleclick=()=>{
+  
+ 
+}
+console.log(search)
+// console.log(catched)
+// React.useEffect(()=>{
+//   let catched = document.body
+//   ref.current = catched
+//    ref.current.click(setSearch(false))
+// },[search])
  
 
 
@@ -34,11 +50,11 @@ const MainNavbar = () => {
           </div>
 
           <div className={styles.hovermenu}>
-            <div onClick={()=>navigate("/livescore")}>
+            <div>
               Live Score
               <div className={styles.submenu1}>
                 <li>
-                  <Link to="/livescore">Live Scores Home</Link>
+                  <Link to="/">Live Scores Home</Link>
                 </li>
                 <li>
                   <Link to="/">Week View</Link>
@@ -369,8 +385,8 @@ const MainNavbar = () => {
           <div ><VscBell style={{height:"25px",width:"25px",color:"white"}} ></VscBell></div>
           <div><TbLanguage style={{height:"25px",width:"25px",color:"white"}}></TbLanguage></div>
           <div><BsGrid3X3Gap style={{height:"22px",width:"22px",color:"white"}}></BsGrid3X3Gap></div>
-          <div onClick={()=>setSearch(true)}>
-         {search?<Input bg={"white"} color={"black"} placeholder="Search player,Team Or Series"></Input> :<HiOutlineSearch  style={{height:"22px",width:"22px",color:"white"}}></HiOutlineSearch>}
+          <div onClick={()=>setSearch(!search)}>
+         {search?<input></input> :<HiOutlineSearch  style={{height:"22px",width:"22px",color:"white"}}></HiOutlineSearch>}
           </div>
         </div>
       </div>
