@@ -28,9 +28,11 @@ console.log(rightdata)
         }
     
       React.useEffect(() => {
-    
-        getdata()
+    setInterval(() => {
+      getdata()
 
+    }, 2000);
+      
         getrightsidedata()
       
       }, []);

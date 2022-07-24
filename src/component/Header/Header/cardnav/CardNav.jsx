@@ -24,8 +24,10 @@ const getdata=()=>{
      }
 
   React.useEffect(() => {
-
-    getdata()
+setInterval(() => {
+  getdata()
+}, 2000);
+   
   
   }, []);
 

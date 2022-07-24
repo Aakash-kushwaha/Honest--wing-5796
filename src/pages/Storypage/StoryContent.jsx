@@ -20,7 +20,7 @@ const StoryContent = () => {
 
   const getSingleNews = (id) => {
     axios
-      .get(`http://localhost:8080/articles/${id}`)
+      .get(`https://databasefornewsapp.herokuapp.com/articles/${id}`)
       .then((r) => {
         setSingleNews(r.data);
         setLoading(false);
