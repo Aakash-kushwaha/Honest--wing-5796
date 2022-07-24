@@ -8,7 +8,7 @@ const MiddlePart = () => {
   const [news, setNews] = useState([]);
 
   const handleNews = () => {
-    axios.get('http://localhost:8080/ausTeamNews')
+    axios.get('https://databasefornewsapp.herokuapp.com/ausTeamNews')
     .then(r => {
       setNews(r.data);
     })
@@ -17,9 +17,9 @@ const MiddlePart = () => {
     })
   }
 
-  // useEffect(() => {
-  //   handleNews();
-  // },[])
+  useEffect(() => {
+    handleNews();
+  },[])
 
   return (
     <Box w='51%' >
