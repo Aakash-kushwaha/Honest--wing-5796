@@ -1,13 +1,13 @@
-import { Box } from "@chakra-ui/react";
-import React from "react";
-import NewsNav from "../Mainbody/NewsNavbar/NewsNav";
-import CovidMainBody from "./CovidMainBody/CovidMainBody";
-import CovidSideBar from "./CovidSideBar/CovidSideBar";
+import { Box } from '@chakra-ui/react'
+import React from 'react'
+import NewsNav from '../Mainbody/NewsNavbar/NewsNav'
+import TamperingMainBody from './temparingMainBody/TamperingMainBody'
+import TempSideBar from './temparingSideBar/TempSideBar'
 
-const CovidPage = () => {
+const BallTemparing = () => {
   return (
     <>
-      <NewsNav />
+    <NewsNav />
       <Box
         maxWidth={{
           sm: "90%",
@@ -26,7 +26,7 @@ const CovidPage = () => {
             lg: "70%",
           }}
         >
-          <CovidMainBody />
+          <TamperingMainBody />
         </Box>
         <Box
           display={{
@@ -39,11 +39,12 @@ const CovidPage = () => {
             md: "28%",
           }}
         >
-          <CovidSideBar />
+          <TempSideBar/>
         </Box>
       </Box>
-    </>
-  );
-};
 
-export default CovidPage;
+      </>
+  )
+}
+
+export default BallTemparing

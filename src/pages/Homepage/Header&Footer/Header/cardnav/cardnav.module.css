@@ -1,0 +1,30 @@
+.maincontainer{
+    background-color:#0398DC;
+}
+
+.cardnav{
+    /* border:2px solid black; */
+    height:32px;
+    display: flex;
+    /* justify-content: space-around; */
+    margin-left: 4rem;
+    margin-right: 3.5rem;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+  
+}
+.cardnav div{
+    height: 32px;
+    /* border:1px solid rgb(1, 40, 214); */
+    /* width: 100px; */
+    /* margin-right: rem; */
+ 
+    color: white;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin-left: 2rem;
+    cursor: pointer;
+
+}

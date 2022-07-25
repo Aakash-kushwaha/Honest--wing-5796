@@ -6,45 +6,33 @@ import axios from "axios";
 // import { data } from "./data";
 import styles from "./Slider.module.css";
 import SliderCard from "./SliderCard";
+import CardNav from "./cardnav/CardNav";
 
 
 
-export default function SimpleSlider() {
-
-const [Data,setData] = React.useState([])
-
-const getdata=()=>{
-    // current matches
-         axios.get("https://api.cricapi.com/v1/currentMatches?apikey=648c2c86-f6f4-4ce3-9c03-6bb9092ce9e5&offset=0")
-         .then((res)=>setData(res.data.data))
-     }
-
-  React.useEffect(() => {
-
-    getdata()
-
-    setInterval(() => {
-        // getdata()
-    }, 5000);
+export default function SimpleSlider({
+  Data
+}) {
 
 
-  
- 
-  
-  }, []);
 
-//   console.log(data);
+  console.log(Data);
 
   var settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow:`${Data.length>=4?4:Data.length}`,
     slidesToScroll: 1,
+    outerWidth:400
   };
   return (
+    <div>
+  
+ 
     <div className={styles.maincontainer}>
-      <Slider {...settings}>
+  
+      <Slider {...settings} >
         {Data?.map((el) => {
           return (
            <SliderCard key={el.id} el={el} ></SliderCard>
@@ -52,5 +40,5 @@ const getdata=()=>{
         })}
       </Slider>
     </div>
-  );
+    </div> );
 }

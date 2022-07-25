@@ -5,8 +5,14 @@ import StoryContent from "./StoryContent";
 
 const Storypage = () => {
   return (
-    <Box display="flex" justifyContent="space-between" w='90%' ml='4.5rem'>
-      <Box w="300px" border="1px" borderColor="gray.200" borderRadius='10px' mt='2rem'>
+    <Box display="flex" justifyContent="space-between" p="2rem">
+      <Box
+        w="300px"
+        border="1px"
+        borderColor="gray.200"
+        borderRadius="10px"
+        mt="2rem"
+      >
         <StoryNavigationLeft />
       </Box>
       <Box w="calc(100% - 300px)">

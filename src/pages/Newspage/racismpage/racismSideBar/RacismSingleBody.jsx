@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
-const SingleCovSideBarPage = ({item}) => {
+const RacismSingleBody = ({item}) => {
   return (
     <Stack
       borderBottom={"1px solid #f4f5f7"}
@@ -21,8 +21,8 @@ const SingleCovSideBarPage = ({item}) => {
           transition="0.5s all ease-in-out"
           objectFit="cover"
           zIndex="1 1"
-          width="100%"
-          height="80%"
+          width={"100%"}
+          height={"80%"}
           src={item.urlToImage}
           alt="Cricket latest news"
           borderRadius="7px"
@@ -47,7 +47,7 @@ const SingleCovSideBarPage = ({item}) => {
         ></Stack>
       </Stack>
     </Stack>
-  );
-};
+  )
+}
 
-export default SingleCovSideBarPage;
+export default RacismSingleBody
