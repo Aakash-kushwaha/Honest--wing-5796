@@ -17,6 +17,12 @@
    
 }
 
+@media screen and (max-width: 720px) {
+    .container{
+        display: none;
+    }
+  }
+
 .logomenu{
 
     /* border: 1px solid rgb(0, 0, 0); */

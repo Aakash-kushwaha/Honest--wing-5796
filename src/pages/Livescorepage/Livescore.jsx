@@ -26,13 +26,21 @@ console.log(rightdata)
             .then((res)=>{setRightdata(res.data)})
         
         }
+<<<<<<< Updated upstream
+=======
+    // console.log(Data,'data')
+      React.useEffect(() => {
+>>>>>>> Stashed changes
     
       React.useEffect(() => {
     setInterval(() => {
       getdata()
 
+<<<<<<< Updated upstream
     }, 2000);
       
+=======
+>>>>>>> Stashed changes
         getrightsidedata()
       
       }, []);

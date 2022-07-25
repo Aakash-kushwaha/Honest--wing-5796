@@ -24,11 +24,17 @@ const getdata=()=>{
      }
 
   React.useEffect(() => {
+<<<<<<< Updated upstream
 setInterval(() => {
   getdata()
 }, 2000);
    
   
+=======
+
+    // getdata()
+    setData(data); setNav(data)
+>>>>>>> Stashed changes
   }, []);
 
    let div1= nav.filter((item) => {
@@ -55,7 +61,11 @@ setInterval(() => {
   return (
     <div className={styles.maincontainer}>
     <div className={styles.cardnav}>
+<<<<<<< Updated upstream
     <div onClick={()=>getdata()}>Matches ({nav.length})</div>
+=======
+    <div onClick={()=>setData(nav)}>Matches ({nav.length})</div>
+>>>>>>> Stashed changes
      {
         data?.map((el)=>{  
           if(el.name.split(",")[1].includes("County")) return 
