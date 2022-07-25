@@ -452,5 +452,48 @@ export const data=  [
     "fantasyEnabled": true,
     "bbbEnabled": true,
     "hasSquad": true
-    }
+    },
+    {
+        "id": "a4a17d4c-2da3-4f5e-ba1f-fe0a50d4efc8",
+        "name": "Finland vs Cyprus, 3rd Place Play-off",
+        "status": "Finland won by 11 runs",
+        "venue": "Kerava National Cricket Ground, Kerava",
+        "date": "2022-07-19",
+        "dateTimeGMT": "2022-07-19T08:00:00",
+        "teams": [
+        "Finland",
+        "Cyprus"
+        ],
+        "teamInfo": [
+        {
+        "name": "Cyprus",
+        "shortname": "CYP",
+        "img": "https://cdorgapi.b-cdn.net/img/teams/597-637872833850554962.webp"
+        },
+        {
+        "name": "Finland",
+        "shortname": "FIN",
+        "img": "https://cdorgapi.b-cdn.net/img/teams/604-637871098066577941.webp"
+        }
+        ],
+        "score": [
+        {
+        "r": 159,
+        "w": 10,
+        "o": 19.3,
+        "inning": "Finland Inning 1"
+        },
+        {
+        "r": 148,
+        "w": 7,
+        "o": 20,
+        "inning": "Cyprus Inning 1"
+        }
+        ],
+        "series_id": "a4d4e28c-eb51-4d4b-9b5d-1f69bd6dfe66",
+        "fantasyEnabled": true,
+        "bbbEnabled": false,
+        "hasSquad": true
+        },
+        
     ]
