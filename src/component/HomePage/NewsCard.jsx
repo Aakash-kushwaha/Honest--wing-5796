@@ -13,8 +13,8 @@ const NewsCard = ({ id, title, description, urlToImage, name, author, url}) => {
         </Box>
         <Box p='1rem 1rem' borderBottom='1px solid grey'>
             <RouterLink to={`/storypage/${id}`}>
-                <Box pb='0.5rem' cursor='pointer'>
-                    <Image borderRadius='15px' src={urlToImage} alt='l1' />
+                <Box pb='0.5rem' cursor='pointer' zIndex='1' overflow='hidden' borderRadius='15px'>
+                    <Image transition={'0.5s'} _hover={{transform: "scale(1.1)", borderRadius:'15px'}} objectFit='contain' zIndex='1' borderRadius='15px' src={urlToImage} alt='l1' />
                 </Box>
                 <Box cursor='pointer'>
                     <Heading pb='0.5rem' as='h3' size='md'>{title}</Heading>
@@ -22,8 +22,8 @@ const NewsCard = ({ id, title, description, urlToImage, name, author, url}) => {
                 </Box>
             </RouterLink>
         </Box>
-        <Box display='flex' p='1rem 1rem' borderBottom='1px solid grey'>
-            <RouterLink to={`/storypage/${id}`}><Box cursor='pointer' mr='1.5rem'><Image  borderRadius='15px' w='18rem' src={urlToImage} alt='l2' /></Box></RouterLink>
+        <Box display={{base: "block", md: "block", lg: "flex"}} p='1rem 1rem' borderBottom='1px solid grey'>
+            <RouterLink to={`/storypage/${id}`}><Box cursor='pointer' mr='1.5rem'><Image  borderRadius='15px' w='100%' src={urlToImage} alt='l2' /></Box></RouterLink>
             <RouterLink to={`/storypage/${id}`}>
                 <Box cursor='pointer'>
                     <Heading mb='0.25rem' as='h6' size='md' fontSize='18px'>{title}</Heading>

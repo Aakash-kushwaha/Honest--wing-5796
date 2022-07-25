@@ -9,7 +9,7 @@ const MiddlePart = () => {
   const [loading, setLoading] = useState(true);
 
   const getData = () => {
-    axios.get('http://localhost:8080/articles')
+    axios.get('https://databasefornewsapp.herokuapp.com/articles')
     .then(r => {
       setLoading(false);
       setData(r.data);
@@ -24,7 +24,7 @@ const MiddlePart = () => {
   },[]);
 
   return (
-    <Box w='51%' >
+    <Box w={{base: '90%', md: '90%', lg: '51%'}} >
       {loading && <Box m='18rem 0 0 18rem'><Spinner color='blue.500' size='xl' /></Box>}
       {data?.map(d => (
         <NewsCard key={d.id} {...d} />

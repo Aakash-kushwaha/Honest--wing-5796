@@ -1,17 +1,18 @@
 import React from 'react'
 import styles from "./livescore.module.css"
-import {data} from "../Homepage/Header&Footer/Header/data"
-import SliderCard from '../Homepage/Header&Footer/Header/SliderCard'
+import {data} from "../Homepage/../../component/Header/Header/data"
+
 import axios from 'axios'
 import Rightnewcard from './Rightnewcard'
-console.log(data)
+import SliderCard from '../../component/Header/Header/SliderCard'
+console.log(data,"data")
 
 const Livescore = () => {
     const [Data,setData] = React.useState([])
     const [rightdata,setRightdata]= React.useState([])
 
 
-
+console.log(rightdata)
     const getdata=()=>{
         // current matches
              axios.get("https://api.cricapi.com/v1/currentMatches?apikey=648c2c86-f6f4-4ce3-9c03-6bb9092ce9e5&offset=0")
@@ -19,17 +20,23 @@ const Livescore = () => {
              .then((err)=>{setData(data) })
          }
     
-  
+         console.log(Data,"Data")
          const getrightsidedata=()=>{
             axios.get("https://databasefornewsapp.herokuapp.com/sports")
             .then((res)=>{setRightdata(res.data)})
+            .catch((err)=>{return setRightdata(data)})
         
         }
-    
+    // console.log(Data,'data')
       React.useEffect(() => {
+<<<<<<< Updated upstream
     
         getdata()
 
+=======
+        // getdata()
+        setData(data)
+>>>>>>> Stashed changes
         getrightsidedata()
       
       }, []);
@@ -61,9 +68,9 @@ const Livescore = () => {
                  </div>
                  <div className={styles.bottomnews}>
                     {
-                        rightdata && rightdata.map((card)=>{
+                        rightdata && rightdata.map((card,i)=>{
                     if(card.author=="Simon Burnton") return
-                    return <Rightnewcard key={card.title} data={card}></Rightnewcard>
+                    return <Rightnewcard key={i} data={card}></Rightnewcard>
                   }) 
                     }
                  </div>
@@ -82,9 +89,9 @@ const Livescore = () => {
               <div className={styles.Newscards}>
 
               {
-                  rightdata && rightdata.map((card)=>{
+                  rightdata && rightdata.map((card,i)=>{
                     if(card.author=="Simon Burnton") return
-                    return <Rightnewcard key={card.title} data={card}></Rightnewcard>
+                    return <Rightnewcard key={i} data={card}></Rightnewcard>
                   })
               }
 

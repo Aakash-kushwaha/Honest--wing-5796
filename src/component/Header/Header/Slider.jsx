@@ -6,7 +6,7 @@ import axios from "axios";
 // import { data } from "./data";
 import styles from "./Slider.module.css";
 import SliderCard from "./SliderCard";
-import CardNav from "./cardnav/CardNav";
+// import CardNav from "./cardnav/CardNav";
 
 
 
@@ -16,7 +16,7 @@ export default function SimpleSlider({
 
 
 
-  console.log(Data);
+  // console.log(Data);
 
   var settings = {
     dots: false,
