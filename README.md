@@ -7,17 +7,16 @@ ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website 
 
 ### Live deployed URL: https://crickinfo.netlify.app/
 
-### Blog URL:https://medium.com/@sonalibhalerao120/second-group-project-at-masai-school-aa3d2ea62ffc
 
 
  <h2>Landing Page</h2>
-    <img src="." />
-       <h2>Product Listing</h2>
-    <img src="" />
-        <h2>Cart Page</h2>
-    <img src="http://offerheoffer.com/wp-content/uploads/2016/07/werf-compressor.png?x58497" />
+    <img src="https://github.com/Aakash-kushwaha/Honest--wing-5796/blob/main/src/screenshots/home.png" />
+       <h2>Live score page</h2>
+    <img src="https://github.com/Aakash-kushwaha/Honest--wing-5796/blob/main/src/screenshots/live.png" />
+        <h2>News Page</h2>
+    <img src="https://github.com/Aakash-kushwaha/Honest--wing-5796/blob/main/src/screenshots/news.png" />
       <h2>Payment page</h2>
-    <img src="https://cdn.flipshope.com/blog/wp-content/uploads/2016/09/Flipkart-payment-options.png" />
+    <img src="https://github.com/Aakash-kushwaha/Honest--wing-5796/blob/main/src/screenshots/team.png" />
     <h1>[Getting Started]</h1>
     <h3>Execution</h3>
     <p>If you want to run our project in your local machine</p>
