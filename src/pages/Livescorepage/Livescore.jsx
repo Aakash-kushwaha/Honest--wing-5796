@@ -5,7 +5,7 @@ import {data} from "../Homepage/../../component/Header/Header/data"
 import axios from 'axios'
 import Rightnewcard from './Rightnewcard'
 import SliderCard from '../../component/Header/Header/SliderCard'
-// console.log(data)
+console.log(data,"data")
 
 const Livescore = () => {
     const [Data,setData] = React.useState([])
@@ -20,27 +20,17 @@ console.log(rightdata)
              .then((err)=>{setData(data) })
          }
     
-  
+         console.log(Data,"Data")
          const getrightsidedata=()=>{
             axios.get("https://databasefornewsapp.herokuapp.com/sports")
             .then((res)=>{setRightdata(res.data)})
+            .catch((err)=>{return setRightdata(data)})
         
         }
-<<<<<<< Updated upstream
-=======
     // console.log(Data,'data')
       React.useEffect(() => {
->>>>>>> Stashed changes
-    
-      React.useEffect(() => {
-    setInterval(() => {
-      getdata()
-
-<<<<<<< Updated upstream
-    }, 2000);
-      
-=======
->>>>>>> Stashed changes
+        // getdata()
+        setData(data)
         getrightsidedata()
       
       }, []);
