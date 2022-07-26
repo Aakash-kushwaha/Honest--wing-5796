@@ -11,9 +11,9 @@ ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website 
 
 
  <h2>Landing Page</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Screen_shot_of_ESPNcricinfo.png" />
+    <img src="." />
        <h2>Product Listing</h2>
-    <img src="https://static.toiimg.com/thumb/resizemode-4,msid-86163575,width-720/86163575.jpg" />
+    <img src="" />
         <h2>Cart Page</h2>
     <img src="http://offerheoffer.com/wp-content/uploads/2016/07/werf-compressor.png?x58497" />
       <h2>Payment page</h2>
