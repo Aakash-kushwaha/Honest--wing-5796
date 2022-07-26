@@ -10,7 +10,7 @@ const StoryNavigationLeft = () => {
 
   const getData = () => {
     axios
-      .get("http://localhost:8080/articles")
+      .get("https://databasefornewsapp.herokuapp.com/articles")
       .then((r) => {
         setNews(r.data);
       })

@@ -1,6 +1,7 @@
 .MainNavbar{
     background-color:#0398DC;    
     /* border: 1px solid red; */
+    margin-bottom: 1rem;
     
 }
 
@@ -15,6 +16,12 @@
     color: white;
    
 }
+
+@media screen and (max-width: 720px) {
+    .container{
+        display: none;
+    }
+  }
 
 .logomenu{
 

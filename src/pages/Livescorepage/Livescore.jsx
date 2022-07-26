@@ -29,15 +29,13 @@ console.log(rightdata)
         }
     // console.log(Data,'data')
       React.useEffect(() => {
-<<<<<<< Updated upstream
-    
-        getdata()
 
-=======
         // getdata()
         setData(data)
->>>>>>> Stashed changes
-        getrightsidedata()
+
+        // getdata()
+        setData(data)
+
       
       }, []);
 

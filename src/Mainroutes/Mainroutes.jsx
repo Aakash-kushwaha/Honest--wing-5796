@@ -11,12 +11,13 @@ import RacismPage from "../pages/Newspage/racismpage/RacismPage";
 import SeriesPage from "../pages/SeriesPage/SeriesPage";
 import Storypage from "../pages/Storypage/Storypage";
 import Teampage from "../pages/Teampage/Teampage";
+import Scoredescription from "../pages/Scoredescription/Scoredescription";
 const Mainroutes = () => {
   return (
    
     <Routes>
       <Route path={"/livescore"} element={<Livescore></Livescore>}></Route>
-      <Route path={"/cardnav"} element={<CardNav></CardNav>}></Route>
+     <Route path={"/scoredescription"} element={<Scoredescription></Scoredescription>}></Route>
       <Route path="/" element={<Homepage></Homepage>}></Route>
       {/* Newspage starts */}
       <Route path={"/newspage"} element={<MainNews></MainNews>}></Route>
@@ -24,7 +25,7 @@ const Mainroutes = () => {
       <Route path="/newspage/Racism" element={<RacismPage />} />
       <Route path="/newspage/Ball-tempering" element={<BallTemparing />} />
       {/* Newspage ends */}
-      <Route path="/seriespage" element={<SeriesPage />} />
+   
       <Route path="/storypage/:id" element={<Storypage />} />
       <Route path="/teampage" element={<Teampage />} />
     </Routes>

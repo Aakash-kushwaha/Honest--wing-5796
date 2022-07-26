@@ -51,10 +51,11 @@ console.log(search)
 
           <div className={styles.hovermenu}>
             <div>
-              Live Score
+            <Link to={"/livescore"}> Live Score</Link>
+             
               <div className={styles.submenu1}>
                 <li>
-                  <Link to="/">Live Scores Home</Link>
+                  <Link to="/livescore">Live Scores Home</Link>
                 </li>
                 <li>
                   <Link to="/">Week View</Link>
@@ -74,7 +75,8 @@ console.log(search)
               </div>
             </div>
             <div>
-              Series
+            <Link to="/scoredescription"> Series</Link>
+             
               <div className={styles.submenu2}>
                 <div>
                   <li>
@@ -136,7 +138,7 @@ console.log(search)
               <div className={styles.submenu2}>
                 <div>
                   <li>
-                    <Link to="/"> Australia</Link>
+                    <Link to="/teampage"> Australia</Link>
                   </li>
                   <li>
                     <Link to="/"> Bangladesh</Link>
@@ -204,19 +206,19 @@ console.log(search)
               News
               <div className={styles.submenu1}>
                 <li>
-                  <Link to="/"> News Home</Link>
+                  <Link to="/newspage"> News Home</Link>
                 </li>
                 <li>
-                  <Link to="/"> Covid-19</Link>
+                  <Link to="/newspage/Covid-19"> Covid-19</Link>
                 </li>
                 <li>
-                  <Link to="/"> Ball-tampering</Link>
+                  <Link to="/newspage/Ball-tempering"> Ball-tampering</Link>
                 </li>
                 <li>
                   <Link to="/"> Technology in Cricket</Link>
                 </li>
                 <li>
-                  <Link to="/"> Racism</Link>
+                  <Link to="/newspage/Racism"> Racism</Link>
                 </li>
               </div>
             </div>

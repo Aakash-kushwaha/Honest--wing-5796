@@ -26,6 +26,10 @@ const getdata=()=>{
   React.useEffect(() => {
 <<<<<<< Updated upstream
 
+<<<<<<< HEAD
+    // getdata()
+    setData(data); setNav(data)
+=======
     getdata()
 =======
 // setInterval(() => {
@@ -38,6 +42,7 @@ setData(data)
 setNav(data)
 >>>>>>> Stashed changes
   
+>>>>>>> 980bbec60f873d606a891604865d8c28c8954957
   }, []);
 
    let div1= nav.filter((item) => {
@@ -64,7 +69,11 @@ setNav(data)
   return (
     <div className={styles.maincontainer}>
     <div className={styles.cardnav}>
+<<<<<<< HEAD
+    <div onClick={()=>setData(nav)}>Matches ({nav.length})</div>
+=======
     <div onClick={()=>setData(data)}>Matches ({nav.length})</div>
+>>>>>>> 980bbec60f873d606a891604865d8c28c8954957
      {
         data?.map((el)=>{  
           if(el.name.split(",")[1].includes("County")) return 
