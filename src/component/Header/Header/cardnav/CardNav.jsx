@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import SimpleSlider from '../Slider'
 import styles from "./cardnav.module.css"
 import {data} from "../data.js"
-// console.log(data,"data")
+console.log(data,"data")
 
 const CardNav = () => {
 
@@ -24,9 +24,25 @@ const getdata=()=>{
      }
 
   React.useEffect(() => {
+<<<<<<< Updated upstream
 
+<<<<<<< HEAD
     // getdata()
     setData(data); setNav(data)
+=======
+    getdata()
+=======
+// setInterval(() => {
+
+
+//   // console.log(Data,"data")
+// }, 2000);
+// getdata()
+setData(data)
+setNav(data)
+>>>>>>> Stashed changes
+  
+>>>>>>> 980bbec60f873d606a891604865d8c28c8954957
   }, []);
 
    let div1= nav.filter((item) => {
@@ -36,7 +52,7 @@ const getdata=()=>{
   let div2= nav.filter((item) => {
     return item.name.includes("County Div 2");
   })
-  console.log(div1,"div")
+  // console.log(div1,"div")
 
   const showcard=(el)=>{
     // console.log(el.name.split(",")[1],"el")
@@ -53,7 +69,11 @@ const getdata=()=>{
   return (
     <div className={styles.maincontainer}>
     <div className={styles.cardnav}>
+<<<<<<< HEAD
     <div onClick={()=>setData(nav)}>Matches ({nav.length})</div>
+=======
+    <div onClick={()=>setData(data)}>Matches ({nav.length})</div>
+>>>>>>> 980bbec60f873d606a891604865d8c28c8954957
      {
         data?.map((el)=>{  
           if(el.name.split(",")[1].includes("County")) return 

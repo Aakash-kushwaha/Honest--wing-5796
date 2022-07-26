@@ -29,9 +29,13 @@ console.log(rightdata)
         }
     // console.log(Data,'data')
       React.useEffect(() => {
+
         // getdata()
         setData(data)
-        getrightsidedata()
+
+        // getdata()
+        setData(data)
+
       
       }, []);
 
