@@ -67,11 +67,11 @@ ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website 
         <li><a href="https://github.com/prabhatMishra">@Vikas</a></li>
    
     </ul>
-       <h1>Contributing</h1>
-    <ul>
-        Contributions are always welcome!<br><br>
-        You can contribute with us to make this more functionable.
-    </ul>
+<h1>Contributing</h1>
+  <ul>
+      Contributions are always welcome!<br><br>
+      You can contribute with us to make this more functionable.
+  </ul>
    
   
 
