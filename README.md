@@ -8,63 +8,75 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h1>crickinfo</h1>
+ESPN cricinfo (formerly known as Cricinfo or CricInfo) is a sports news website exclusively for the game of cricket. The site features news, articles, live coverage of cricket matches (including liveblogs and scorecards), and StatsGuru, a database of historical matches and players from the 18th century to the present
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Live deployed URL: https://crickinfo.netlify.app/
 
-### `npm run build`
+### Blog URL:https://medium.com/@sonalibhalerao120/second-group-project-at-masai-school-aa3d2ea62ffc
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ <h2>Landing Page</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Screen_shot_of_ESPNcricinfo.png" />
+       <h2>Product Listing</h2>
+    <img src="https://static.toiimg.com/thumb/resizemode-4,msid-86163575,width-720/86163575.jpg" />
+        <h2>Cart Page</h2>
+    <img src="http://offerheoffer.com/wp-content/uploads/2016/07/werf-compressor.png?x58497" />
+      <h2>Payment page</h2>
+    <img src="https://cdn.flipshope.com/blog/wp-content/uploads/2016/09/Flipkart-payment-options.png" />
+    <h1>[Getting Started]</h1>
+    <h3>Execution</h3>
+    <p>If you want to run our project in your local machine</p>
+    <p>Follow the given steps:</p>
+    <ul>
+        <li>Clone our respository <a href="https://github.com/Aakash-kushwaha/Flipkart-Clone.git">https://github.com/Aakash-kushwaha/Flipkart-Clone.git</a></li>
+        <li>Open our code in VS code</li>
+        <li>Open 'index.html' with Live server</li>
+        <li>Initialize the server by writing 'npm run start' on Terminal</li>
+ <h1>Features</h1>
+<ul>
+ <li>Social Sign-in/Sign-up</li>
+ <li>Slider / Drop Down Menu</li>
+ <li>Product pages , Payment Page</li>
+ <li>Sorting and searching the Product functionality</li>
+ </ul>
+    </ul>
+        <h1>Tech Stack</h1>
+    <ul>
+        <li>React</li>
+        <li>Javascript</li>
+        <li>React-Slick</li>
+        <li>Bootstrap</li>
+    </ul>
+    <h1>Area of responsiblites</h1>
+    
+  <ul>
+ <li>Developed the Home and Product page.</li>
+ <li>Helped with Payment and Cart page.</li>
+ <li>programmed sorting and Searching products</li>
+ <li>Allocated tasks in a team.</li>
+ </ul>
+ 
+ A collaborative project built by a team of 6 developers , executed in 5 days.
+    
+    
+    
+   <h1>Contributors</h1>
+    <ul>
+        <li><a href="https://github.com/Nameh-Dhiman">@Nameh Dheeman</a></li>
+        <li><a href="https://github.com/SonaliBhalerao">@Sonali Bhalerao</a></li>
+        <li> <a href="https://github.com/VishalPawar">@Vishal Pawar</a> </li>
+        <li><a href="https://github.com/prabhatMishra">@prabhat Mishra</a></li>
+        <li><a href="https://github.com/ParimaBiswas">@Parimal Biswas</a></li>
+    </ul>
+       <h1>Contributing</h1>
+    <ul>
+        Contributions are always welcome!<br><br>
+        You can contribute with us to make this more functionable.
+    </ul>
+   
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
