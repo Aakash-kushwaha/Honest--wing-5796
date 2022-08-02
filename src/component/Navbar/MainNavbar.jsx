@@ -14,19 +14,12 @@ import {HiOutlineSearch} from "react-icons/hi"
 const MainNavbar = () => {
   const {colorMode,toggleColorMode}= useColorMode()
   const [search,setSearch]= React.useState(false)
-  const ref = React.useRef()
 
-  const runfunction=()=>{
 
-  }
- 
+
 // let catched = document.body
 
-const handleclick=()=>{
-  
- 
-}
-console.log(search)
+
 // console.log(catched)
 // React.useEffect(()=>{
 //   let catched = document.body
@@ -387,8 +380,8 @@ console.log(search)
           <div ><VscBell style={{height:"25px",width:"25px",color:"white"}} ></VscBell></div>
           <div><TbLanguage style={{height:"25px",width:"25px",color:"white"}}></TbLanguage></div>
           <div><BsGrid3X3Gap style={{height:"22px",width:"22px",color:"white"}}></BsGrid3X3Gap></div>
-          <div onClick={()=>setSearch(!search)}>
-         {search?<input></input> :<HiOutlineSearch  style={{height:"22px",width:"22px",color:"white"}}></HiOutlineSearch>}
+          <div onClick={()=>setSearch(true)}>
+         {search?<input></input> :<HiOutlineSearch  style={{height:"22px",width:"22px",color:"black"}}></HiOutlineSearch>}
           </div>
         </div>
       </div>
