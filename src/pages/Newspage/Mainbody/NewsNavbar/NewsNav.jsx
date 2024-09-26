@@ -93,7 +93,7 @@ const NewsNav = () => {
 
                     style={({ isActive }) => ({
                       color: isActive ? "black" : "black",
-                      fontWeight: isActive ? "700" : "400"
+                      fontWeight: isActive ? "700" : "600"
                     })}
                     to={`/newspage/${link}`}
                   >
